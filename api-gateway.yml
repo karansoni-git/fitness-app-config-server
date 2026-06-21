@@ -16,6 +16,12 @@ spring:
               uri: lb://ACTIVITY-SERVICE
               predicates:
                 - Path=/api/activities/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://127.0.0.1:3000/realms/master/protocol/openid-connect/certs
+                
 eureka:
   client:
     service-url:
