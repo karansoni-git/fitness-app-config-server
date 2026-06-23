@@ -23,3 +23,7 @@ eureka:
 
 server:
   port: 2025
+
+jwt:
+  secret:
+    key: LNSiasfOFOsdinLSDDVOIEWlsfl391nsaknf93io13l
